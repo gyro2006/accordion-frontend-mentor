@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 12px;
+    }
+
+    #card {
+      border-radius: 20px;
+      width: 82%;
+      height: 500px;
+      max-height: 900px;
+      padding: 0;
+    }
+
+    #image {
+      background-image: url("images/bg-pattern-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 100% 67%;
+      padding-left: 10px;
+      padding-right: 0
+    }
+
+    #woman-background {
+      background-image: url("images/illustration-woman-online-desktop.svg");
+      background-repeat: no-repeat;
+      height: 400px;
+      position: relative;
+      bottom: 140px;
+      background-position: 100% 40%;
+    }
+
+    #info {
+      padding: 75px 100px 100px 100px;
+      overflow:hidden;
+    }
+
+    h2 {
+      color:hsl(238, 29%, 16%);
+      font-family: 'Lexend Deca', sans-serif;
+      position: relative;
+      bottom: 15px;
+
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: white;
+      color: hsl(237, 12%, 33%);
+      cursor: pointer;
+      padding: 15px 15px 15px 0;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-bottom: 1px solid hsl(240, 5%, 91%);
+      outline: none;
+      transition: 0.4s;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active {
+      font-weight: 700;
+    }
+
+    .accordion:hover {
+      color: hsl(14, 88%, 65%);
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      color: hsl(240, 6%, 50%);
+      padding: 0;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .accordion:after {
+      content: url("images/icon-arrow-down.svg");
+      /* Unicode character for "plus" sign (+) */
+      font-size: 12px;
+      color: #777;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      transform: rotate(180deg);
+      /* Unicode character for "minus" sign (-) */
+    }
+
+    @media(min-width:768px){
+      #box-img {
+      position: relative;
+      width: 180px;
+      top: 190px;
+      right: 110px;
+      z-index: 1;
+    }
+    }
+
+    @media(max-width:768px) {
+      #box-img {
+      display: none;
+    }
+      #card {
+      border-radius: 20px;
+      width: 82%;
+      min-width: 350px;
+      height: 500px;
+      max-height: 900px;
+      padding: 0;
+    }
+
+    #image {
+      background-image: url("images/bg-pattern-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: 65% 100% ;
+      height: 30%;
+      position: relative;
+      padding-left: 70px;
+      bottom: 35px;
+      
+    }
+
+    #info {
+      margin-left: 20px;
+      padding: 20px;
+      overflow:hidden;
+      text-align: center;
+    }
+
+    #woman-background {
+      background-image: url("images/illustration-woman-online-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 30%;
+      width: 250px;
+      padding-left: 40px;
+    }
+    }
